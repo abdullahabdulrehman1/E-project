@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="stylesheet" href="./css/secondban.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body{
+      font-style: italic;
+    }
+.sam {
+            text-align: center;
+            font-style: italic;
+        }
+  </style>
+</head>
+
+<body>
+
+  <div class="offcanvas offcanvas-start opacity-75 abc " tabindex="-1" id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel">
+
+  <div class="offcanvas-header">
+      <h1 class="offcanvas-title" id="offcanvasExampleLabel">Rheem Cooling</h1>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body" style="border-bottom: 3px solid black;">
+      <div>
+
+      </div>
+      <div class="dropdown mt-3">
+         <a href="./index.html"> <button class="btn btn-lg m-4  text-dark f">Home</button> </a><br>
+        <a href="./Split-AC.Html">  <button class="btn btn-lg m-4  text-dark f">Split Ac</button> </a><br>
+        <a href="./Window-AC.html">  <button class="btn btn-lg m-4  text-dark f">Window Ac</button> </a><br>
+        <a href="./Cassette AC.html">  <button class="btn btn-lg m-4  text-dark f">Cassette AC</button> </a><br>
+          <!-- <button class="btn btn-lg m-4  text-dark f">Top Ceiling AC</button><br> -->
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<!-- Page content wrapper-->
+<div id="page-content-wrapper">
+  <!-- Top navigation-->
+  <nav class="navbar fixed-top navbar-expand-lg    opacity-75 m-0 p-0 stt">
+      <div class="container-fluid stt">
+          <button class="btn btn-primary mx-5" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+                  class="fa-solid fa-bars"></i></button>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+              <div class="col-2 rounded rounded-circle"><img src="./images/logo8_13_225819.png" height="150px"
+                      width="200px" alt=""></div>
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll col-10 mx-5"
+                  style="--bs-scroll-height: 50px;">
+
+                  <li class="nav-item">
+                      <a class="nav-link active b mx-2 text-dark t" aria-current="page" href="./index.html">
+                          <h5>Home</h5>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link b mx-2 text-dark t" href="#ad">
+                          <h5>Our AC's</h5>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link b mx-2 text-dark t" href="#footer">
+                        <h5>Contact</h5>
+                    </a>
+                  </li>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+
+  <!-- banner -->
+  <section class="banner col-12 ">
+      <div class="content">
+          <div class="general-info">
+              <p><b>Book Your Air Conditioner Right Now And Get Upto 50% Off Till Indepandance Day</b></p>
+          </div>
+          <div class="principal ">
+              <h1>RHEEM COOLING</h1>
+              <a href="" class="link-1 electronic">Stay<span>Cool</span> </a>
+              <p>Your <span>Air Conditioner</span> Partner</p>
+              <a href="">
+                  <div class="link-2 "><button class="btn btn-lg"> Your AC Now</button></div>
+              </a>
+          </div>
+          <picture>
+              <img src="./images/KenWood_1.5_Ton-removebg-preview.png" alt="" height="350" width="550"
+                  class="rounded rounded-pill" usemap="#image-map">
+
+          </picture>
+
+      </div>
+  </section><br> <br> <br> 
+
+  <div class="container">
+    <div class="row">
+      <div class="gsc-col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  
+         onclick="showDetails(
+          'BLUE STAR',
+          'Blue Star 1 Ton 3 Star Window  AC',
+          `https://pdimg.pricedekho.com/5/13097/0/home.jpg`,
+          'Rs. 18,990*',
+          'haier91000',
+          `   <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+              <table border='1' >
+                <tbody>
+                <tr>
+                <th >Power Source</th>
+                <td >Corded Electric</td>
+                </tr>
+                <tr>
+                <th >Brand </th>
+                <td >Blue Star</td>
+                </tr>
+                <tr>
+                <th >Model Name</th>
+                <td >WFA409GL</td>
+                </tr>
+                <tr>
+                <th >Special Feature </th>
+                <td >Dust Filter, Fast Cooling, Auto Clean,</td>
+                </tr>
+                <tr>
+                <th >Warranty Type</th>
+                <td >Limited</td>
+                </tr>
+                </tbody>
+                </table>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs.</span>18,990<sup>*</sup> </h4>`)">
+                  <h1 class="sam"> <i> BLUE STAR </i></h1>
+          <h3> Blue Star 1 Ton 3 Star Window  AC </h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              alt="Blue Star 3WAE081YDF 0.75 Ton 3 Star Window AC" width="265" height="145"
+              src="https://pdimg.pricedekho.com/5/13097/0/home.jpg"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div class="price">
+                <h4 > <span class="icon-cd_R">Rs</span>18,990<sup>*</sup> </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gsc_col-md-4" style="width: 33.3333%;" id="ad">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'VOLTAS',
+          'Voltas 0.8 Ton 3Star Window  AC',
+          `https://pdimg.pricedekho.com/5/13270/0/home.jpg`,
+          'Rs. 14,890*',
+          'haier91000',
+          `   <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+              <table border='1' >
+                <tbody>
+                <tr>
+                <th >Brand</th>
+                <td >Voltas</td>
+                </tr>
+                <tr>
+                <th >Model Name</th>
+                <td >WAC 185V ADA</td>
+                </tr>
+                <tr>
+                <th >Power Source</th>
+                <td >Corded Electric</td>
+                </tr>
+                <tr>
+                <th >Special Feature</th>
+                <td >Dust Filter, Anti-bacterial Filter</td>
+                </tr>
+                <tr>
+                <th >Warranty Type</th>
+                <td >Limited</td>
+                </tr>
+                </tbody>
+                </table>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs.</span>14,890<sup>*</sup> </h4>`)">
+                <h1 class="sam">VOLTAS</h1>
+          <h3>Voltas 0.8 Ton 3Star Window  AC</h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition active" title="Voltas 103 DZS 0.8 Ton 3 Star Window AC"
+              alt="Voltas 103 DZS 0.8 Ton 3 Star Window AC" width="265" height="145"
+              src="https://pdimg.pricedekho.com/5/13270/0/home.jpg" loading="eager" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs</span>14,890<sup>*</sup></h4>
+              </div>
+            </div>
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gsc_col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'CROMA',
+          'Croma 1 Ton 3 Star Window AC',
+          `https://pdimg.pricedekho.com/5/13343/0/home.jpg`,
+          'Rs. 19,994*',
+          'haier91000',
+          `     <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+              <ul>
+                <li>Voltage / 60 Hz 208/230</li>
+                <li>Watts (Cooling) 1,010/1,060</li>
+                <li>Watts (Heating) 2,900/3,500</li>
+                <li>Rated Amps (Cooling) 5.1/4.8</li>
+                <li>Rated Amps (Heating) 14.0/15.3</li>
+              </ul>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs </span>19,994<sup>*</sup> </h4>`)">
+                <h1 class="sam">CROMA</h1>
+          <h3>Croma 1 Ton 3 Star Window AC</h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition active" title="Croma CRAC1181 1 Ton 3 Star Window AC"
+              alt="Croma CRAC1181 1 Ton 3 Star Window AC" width="265" height="145"
+              src="https://pdimg.pricedekho.com/5/13343/0/home.jpg" loading="eager" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs</span>19,994<sup>*</sup></h4>
+              </div>
+            </div>
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br> <br> <br>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="gsc_col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'VOLTAS',
+          'Voltas 1. Ton 3 Star Window AC',
+          `https://pdimg.pricedekho.com/5/13345/0/home.jpg`,
+         
+          'Rs. 17,990',
+          'haier91000',
+          `  <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+              <table border='1' >
+                <tbody>
+                <tr>
+                <th >Brand</th>
+                <td >Voltas</td>
+                </tr>
+                <tr>
+                <th >Model</th>
+                <td >123 Lyi/123 LZF</td>
+                </tr>
+                <tr>
+                <th >Energy Efficiency</th>
+                <td >3 Star</td>
+                </tr>
+                <tr>
+                <th >Capacity</th>
+                <td >1 Tons</td>
+                </tr>
+                <tr>
+                <th >Part Number</th>
+                <td >123 LZF</td>
+                </tr>
+                </tbody>
+                </table>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs.</span>17,990<sup>*</sup> </h4>`)">
+                <h1 class="sam">VOLTAS</h1>
+          <h3>Voltas 1. Ton 3 Star Window AC</h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition active" title="Voltas WAC 103 LZF 1.5 Ton 3 Star Window AC"
+              alt="Voltas WAC 103 LZF 1.5 Ton 3 Star Window AC" width="265" height="145"
+              src="https://pdimg.pricedekho.com/5/13345/0/home.jpg" loading="eager" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs</span>17,990<sup>*</sup></h4>
+              </div>
+            </div>
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gsc_col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'CARRIER',
+          'Carrier Estrella 1 Ton Window AC',
+          `https://pdimg.pricedekho.com/5/13363/0/home.jpg`,
+          'Rs. 19,999*',
+          'haier91000',
+          `   <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+              <table  border='1'>
+                <tbody>
+                <tr>
+                <th >Brand</th>
+                <td >Carrier</td>
+                </tr>
+                <tr>
+                <th >Model</th>
+                <td >CAW18SN3R39F0</td>
+                </tr>
+                <tr>
+                <th >Capacity</th>
+                <td >1.5 Tons</td>
+                </tr>
+                <tr>
+                <th >Special Features</th>
+                <td >Dust Filter</td>
+                </tr>
+                <tr>
+                <th >Voltage</th>
+                <td >230 Volts</td>
+                </tr>
+                </tbody>
+                </table>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs</span>19,999<sup>*</sup> </h4>`)">
+                <h1 class="sam">CARRIER</h1>
+          <h3>Carrier Estrella 1 Ton Window AC</h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition active" title="Carrier Estrella CAW12ET3N8F0 1 Ton 3 Star Split AC"
+              alt="Carrier Estrella CAW12ET3N8F0 1 Ton 3 Star Split AC" width="265" height="145"
+              src="https://pdimg.pricedekho.com/5/13363/0/home.jpg" loading="eager" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs</span>19,999<sup>*</sup></h4>
+              </div>
+            </div>
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gsc_col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'VOLTAS',
+          'Voltas 0.75 Ton 3 Star  Window AC',
+          `https://pdimg.pricedekho.com/5/13390/0/home.jpg`,
+          'Rs. 16,990*',
+          'haier91000',
+          `  <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+              <table  border='1'>
+                <tbody>
+                <tr>
+                <th >Brand</th>
+                <td >Voltas</td>
+                </tr>
+                <tr >
+                <th >Model</th>
+                <td >102 EZQ</td>
+                </tr>
+                <tr >
+                <th >Energy Efficiency</th>
+                <td >2 Star</td>
+                </tr>
+                <tr >
+                <th >Capacity</th>
+                <td >0.75 Tons</td>
+                </tr>
+                <tr >
+                <th >Special Features</th>
+                <td >Dehumidifier</td>
+                </tr>
+                </tbody>
+                </table>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>₹.</span>16,990<sup>*</sup> </h4>`)">
+                <h1 class="sam">VOLTAS</h1>
+          <h3>Voltas 0.75 Ton 3 Star  Window AC</h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition active" title="Voltas 102EZQ 0.75 Ton 2 Star Window AC"
+              alt="Voltas 102EZQ 0.75 Ton 2 Star Window AC" width="265" height="145"
+              src="https://pdimg.pricedekho.com/5/13390/0/home.jpg" loading="eager" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs</span>16,990<sup>*</sup></h4>
+              </div>
+            </div>
+            <div class="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br> <br> <br>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="gsc_col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'CARRIER',
+          'Carrier  1.5 Ton 3 Star  Window AC',
+          `https://cdn.shopclues.com/images/thumbnails/78177/320/320/133604162-78177911-1517296642.jpg`,
+          'Rs. 36,500*',
+          'haier91000',
+          `   <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+              <div id='spec'>
+                <table  border='1' >
+                  <tbody>
+                    <tr>
+                      <th >Brand</th>
+                      <td >Carrier</td>
+                    </tr>
+                    <tr>
+                      <th >Model</th>
+                      <td>CAW18SN3R39F0</td>
+                    </tr>
+                    <tr>
+                      <th >Capacity</th>
+                      <td >1.5 Tons</td>
+                    </tr>
+                    <tr>
+                      <th >Noise Level</th>
+                      <td >50 dB</td>
+                    </tr>
+                    <tr>
+                      <th >Special Features</th>
+                      <td >Dust Filter</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs.</span>36,500<sup>*</sup> </h4>`)">
+                <h1 class="sam">CARRIER</h1>
+          <h3>Carrier  1.5 Ton 3 Star  Window AC</h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition" title="Voltas 102 EZQ 0.75 Ton 2 Star Window AC"
+              alt="Voltas 102 EZQ 0.75 Ton 2 Star Window AC" width="265" height="145"
+              src="https://cdn.shopclues.com/images/thumbnails/78177/320/320/133604162-78177911-1517296642.jpg"
+              loading="lazy" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div id="spec">
+              </div>
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs</span>36,500<sup>*</sup></h4>
+              </div>
+            </div>
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gsc_col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'LLOYD',
+          'Lloyd 1.5 Ton 3 Star Window AC',
+          `https://cdn.shopclues.com/images1/thumbnails/116273/320/320/153055085-116273978-1650873098.jpg`,
+          'Rs 29,669*',
+          'haier91000',
+          `   <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+                <table border='1'>
+                  <tbody>
+                    <tr>
+                      <td><b> title </b></td>
+                      <td>Lloyd 1.5 Ton 3 Star Window AC</td>
+                    </tr>
+                    <tr>
+                      <td><b> brand </b></td>
+                      <td>Lloyd</td>
+                    </tr>
+                    <tr>
+                      <td><b> model no </b></td>
+                      <td>LW19B32R</td>
+                    </tr>
+                    <tr>
+                      <td><b> capacity in tons </b></td>
+                      <td>1.5 Ton</td>
+                    </tr>
+                    <tr>
+                      <td><b> star rating </b></td>
+                      <td>3 Star</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs</span>29,669<sup>*</sup> </h4>`)">
+                <h1 class="sam">LLOYD</h1>
+          <h3>Lloyd 1.5 Ton 3 Star Window AC </h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition" title="Voltas 102 EZQ 0.75 Ton 2 Star Window AC"
+              alt="Voltas 102 EZQ 0.75 Ton 2 Star Window AC" width="265" height="145"
+              src="https://cdn.shopclues.com/images1/thumbnails/116273/320/320/153055085-116273978-1650873098.jpg"
+              loading="lazy" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs</span>29,669<sup>*</sup></h4>
+              </div>
+            </div>
+
+            <div class="">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gsc_col-md-4" style="width: 33.3333%;">
+        <div class="card shadowWPadding posR border border-dark"  onclick="showDetails(
+          'HITACHI',
+          'Hitachi 1.5 3 Star  Ton Window AC',
+          `https://cdn.shopclues.com/images/thumbnails/80243/320/320/124976822816ZrM2BO9AL1502712987.jpg`,
+          'Rs 34,690*',
+          'haier91000',
+          `   <h4>Details</h4>
+            </div>
+            <div class='card-text'>
+                <table border='2'>
+                  <tbody>
+                    <tr>
+                      <td><b> Brand </b></td>
+                      <td>Hitachi</td>
+                    </tr>
+                    <tr>
+                      <td><b> Model Name </b></td>
+                      <td>KAZE PLUS RAW222KVD</td>
+                    </tr>
+                    <tr>
+                      <td><b> Capacity </b></td>
+                      <td>2 Ton</td>
+                    </tr>
+                    <tr>
+                      <td><b> Star Rating </b></td>
+                      <td>2 Star</td>
+                    </tr>
+                    <tr>
+                      <td><b> Condenser Coil </b></td>
+                      <td>Copper</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <h4 style='margin-top:85px;'> <span class='icon-cd_R'>Rs.</span>34,690<sup>*</sup> </h4>`)">
+                <h1 class="sam">HITACHI</h1>
+          <h3>Hitachi 1.5 Ton 3 Star  Window AC</h3>
+          <div class="paddingnone hover imgTopRound" style="min-height: auto;"><img class="card-img" decoding="async"
+              class="hover imageTransition" title="Voltas 102 EZQ 0.75 Ton 2 Star Window AC"
+              alt="Voltas 102 EZQ 0.75 Ton 2 Star Window AC" width="265" height="145"
+              src="https://cdn.shopclues.com/images/thumbnails/80243/320/320/124976822816ZrM2BO9AL1502712987.jpg"
+              loading="lazy" data-lazy="true"></div>
+          <div class="title holder">
+            <div class="card-title">
+            </div>
+            <div class="card-text">
+              </div>
+              <div class="price">
+                <h4><span class="icon-cd_R">Rs.</span>34,690<sup>*</sup></h4>
+              </div>
+            </div>
+            <div class="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br> <br> <br>
+
+
+  <footer class="footer-section mt-5" id="footer">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Block A,North Nazimabad, Karachi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>03092426209</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>abdullahabdurrehman72@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./images/whitelogo.png" height="150px" width="250px"
+                                    alt="" class="img-fluid mx-5" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do
+                                eiusmod tempor
+                                incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>FAQ</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Feel free to inquire your queries now!
+                            </p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="FAQ" style="height: 20vh;">
+                                <button class="my-5 "><i class="fab fa-telegram-plane "></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left ">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2022, All Right Reserved <a href="">Abdullah
+                                Student1368776</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right ">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+  <!-- Button trigger modal -->
+  <button  type="button" class="btn btn-primary d-none" id="openModal" data-toggle="modal" data-target="#exampleModalLong">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade  " id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card shadowWPadding posR">
+                    <h1 class="sam" id="modal_brand">testing</h1>
+                    <h6 class="product_title entry-title wd-entities-title" id="modal_name"> testing</h6>
+                    
+                    <div class="card-body d-flex">
+                        <img class="border border-dark" id="modal_image" src="testing" alt="" style="width: 300px; height : 300px; border: 1 solid black !important;">
+                        
+                        <div class="card-text" style="margin-left: 35px;" id="modal_details">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    function showDetails(brand,name,image,price,id,detail){
+        document.getElementById('openModal').click();
+        console.log(brand,name,image,price,id)
+        document.getElementById('modal_brand').innerHTML = brand;
+        document.getElementById('modal_name').innerHTML = name;
+        let img = document.getElementById('modal_image');
+        img.src = image;
+
+        // let desc = document.getElementById(id);
+        // console.log(desc)
+        document.getElementById('modal_details').innerHTML = detail;       
+    }
+</script>
